@@ -1,4 +1,4 @@
-# Laravel API - Module-02 Routing
+# Laravel API - Module-03 Authentication
 
 Laravel API Project - JWT Auth implementation
 
