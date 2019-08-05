@@ -22,6 +22,19 @@ $ php artisan key:generate
 $ php artisan jwt:secret
 ```
 - Change default guard to api, and api guard driver to jwt in config/auth.php file
-- Implement jwt auth to the router
+- Implement jwt auth to the router, add middleware `api.auth`
+```php
+<!php
+...
+$api->group(['middleware' => 'api.auth'], function ($api) {
+    ...
+}
+...
+```
+- Move endpoint /me and /logout to the middleware
+- Use the postman to check the API that has been modify
+- Modify .env file, configure database connection string
+- Migrate database
+- Follow the tutorial, create Controller, add registration method etc.
 - Push project to this repositories
 - Take a screenshot of your repositories link and post to the [KK4-B Google Classroom](https://classroom.google.com)
