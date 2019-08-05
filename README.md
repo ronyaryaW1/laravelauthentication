@@ -22,7 +22,7 @@ $ php artisan key:generate
 $ php artisan jwt:secret
 ```
 - Change default guard to api, and api guard driver to jwt in config/auth.php file
-- Implement jwt auth to the router, add middleware `api.auth`
+- Implement jwt auth to the router, add middleware `api.auth` to api.php file.
 ```php
 <?php
 ...
