@@ -33,7 +33,7 @@ $api->group(['middleware' => 'api.auth'], function ($api) {
 ```
 - Move endpoint /me and /logout to the middleware
 - Use the postman to check the API that has been modify
-- Modify .env file, configure database connection string
+- Modify .env file, configure the database connection string
 - Migrate database
 - Follow the tutorial, create Controller, add registration method etc.
 - Push project to this repositories
